@@ -1,0 +1,5 @@
+opencv-contrib-python == 3.4.18.65
+scikit-learn
+pandas
+PyQt5
+joblib
