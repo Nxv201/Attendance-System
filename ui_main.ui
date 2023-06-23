@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+    <class>Main</class>
+    <widget class="QMainWindow" name="Main">
+        <property name="geometry">
+            <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>500</width>
+                <height>500</height>
+            </rect>
+        </property>
+        <property name="minimumSize">
+            <size>
+                <width>500</width>
+                <height>500</height>
+            </size>
+        </property>
+        <property name="maximumSize">
+            <size>
+                <width>500</width>
+                <height>500</height>
+            </size>
+        </property>
+        <property name="windowTitle">
+            <string>Face Recognition Attendance</string>
+        </property>
+        <widget class="QWidget" name="centralwidget">
+            <property name="styleSheet">
+                <string notr="true">QWidget#centralwidget{
+	border-radius: 20px;
+}
+QWidget#MainTab{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.023, stop:0 rgba(255, 140, 140, 255), stop:1 rgba(94, 122, 255, 255));
+}
+QWidget#AttendanceTab{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.023, stop:0 rgba(255, 140, 140, 255), stop:1 rgba(94, 122, 255, 255));
+}
+QWidget#RegisterTab{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.023, stop:0 rgba(255, 140, 140, 255), stop:1 rgba(94, 122, 255, 255));
+}
+QWidget#DeleteTab{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.023, stop:0 rgba(255, 140, 140, 255), stop:1 rgba(94, 122, 255, 255));
+}
+QWidget#EditTab{
+	background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0.023, stop:0 rgba(255, 140, 140, 255), stop:1 rgba(94, 122, 255, 255));
+}
+QFrame#frame{
+	margin: 60px;
+	border-radius: 20px;
+	background-color: rgba(225, 228, 221, 120)
+}
+
+QLineEdit{
+	min-height: 45px;
+	border-radius: 20px;
+	background-color: #FFFFFF;
+	padding-left: 20px;
+	color: rgb(140, 140, 140);
+}
+
+QLineEdit:hover{
+	border: 2px solid rgb(139, 142, 139);
+}
+
+QPushButton#attend_button{
+	min-height: 45px;
+	border-radius: 20px;
+	background-color: rgb(140, 140, 140);
+	color: #FFFFFF;
+}
+
+QPushButton#attend_button:hover{
+	border: 2px solid rgb(255, 255, 255);
+}
+
+QPushButton#add_button{
+	min-height: 45px;
+	border-radius: 20px;
+	background-color: rgb(140, 140, 140);
+	color: #FFFFFF;
+}
+
+QPushButton#add_button:hover{
+	border: 2px solid rgb(255, 255, 255);
+}
+
+QPushButton#del_button{
+	min-height: 45px;
+	border-radius: 20px;
+	background-color: rgb(140, 140, 140);
+	color: #FFFFFF;
+}
+
+QPushButton#del_button:hover{
+	border: 2px solid rgb(255, 255, 255);
+}
+
+QPushButton#edit_button{
+	min-height: 45px;
+	border-radius: 20px;
+	background-color: rgb(140, 140, 140);
+	color: #FFFFFF;
+}
+
+QPushButton#edit_button:hover{
+	border: 2px solid rgb(255, 255, 255);
+}
+
+QCheckBox{
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+QLabel{
+	color: rgb(95, 94, 108);
+}
+
+QPushButton#forgot_button{
+	border: 0px;
+	font-style: italic;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+QPushButton#close_button{
+	background-color: rgb(186, 0, 0);
+	border-radius: 6px;
+}
+
+QPushButton#minimize_button{
+	background-color: rgb(226, 226, 0);
+	border-radius: 6px;
+}
+                </string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+                <property name="spacing">
+                    <number>0</number>
+                </property>
+                <property name="leftMargin">
+                    <number>0</number>
+                </property>
+                <property name="topMargin">
+                    <number>0</number>
+                </property>
+                <property name="rightMargin">
+                    <number>0</number>
+                </property>
+                <property name="bottomMargin">
+                    <number>0</number>
+                </property>
+                <item>
+                    <widget class="QTabWidget" name="tabWidget">
+                        <property name="styleSheet">
+                            <string notr="true"/>
+                        </property>
+                        <property name="currentIndex">
+                            <number>0</number>
+                        </property>
+                        <widget class="QWidget" name="MainTab">
+                            <attribute name="title">
+                                <string>Home</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0">
+                                <property name="spacing">
+                                    <number>10</number>
+                                </property>
+                                <property name="leftMargin">
+                                    <number>30</number>
+                                </property>
+                                <property name="topMargin">
+                                    <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                    <number>30</number>
+                                </property>
+                                <property name="bottomMargin">
+                                    <number>0</number>
+                                </property>
+                                <item>
+                                    <widget class="QLabel" name="label_2">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>16777215</width>
+                                                <height>40</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Wellcome&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLineEdit" name="user_id">
+                                        <property name="placeholderText">
+                                            <string>ID</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLineEdit" name="user_name">
+                                        <property name="placeholderText">
+                                            <string>User name</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="add_button">
+                                        <property name="text">
+                                            <string>Add User</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="attend_button">
+                                        <property name="text">
+                                            <string>Take Attendance</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="RegisterTab">
+                            <attribute name="title">
+                                <string>Register</string>
+                            </attribute>
+                            <widget class="QLabel" name="label_3">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>30</x>
+                                        <y>30</y>
+                                        <width>436</width>
+                                        <height>40</height>
+                                    </rect>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>16777215</width>
+                                        <height>40</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Register Table&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QTableWidget" name="registerTable">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>0</x>
+                                        <y>120</y>
+                                        <width>501</width>
+                                        <height>351</height>
+                                    </rect>
+                                </property>
+                                <column>
+                                    <property name="text">
+                                        <string>ID</string>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="width">
+                                        <number>500</number>
+                                    </property>
+                                    <property name="text">
+                                        <string>NAME</string>
+                                    </property>
+                                </column>
+                            </widget>
+                        </widget>
+                        <widget class="QWidget" name="DeleteTab">
+                            <attribute name="title">
+                                <string>Delete</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0">
+                                <property name="spacing">
+                                    <number>5</number>
+                                </property>
+                                <property name="leftMargin">
+                                    <number>30</number>
+                                </property>
+                                <property name="topMargin">
+                                    <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                    <number>30</number>
+                                </property>
+                                <property name="bottomMargin">
+                                    <number>30</number>
+                                </property>
+                                <item>
+                                    <widget class="QLabel" name="delete_label">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>16777215</width>
+                                                <height>40</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Delete User&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLineEdit" name="user_id_for_del">
+                                        <property name="placeholderText">
+                                            <string>ID</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                
+                                <item>
+                                    <widget class="QPushButton" name="del_button">
+                                        <property name="text">
+                                            <string>Delete User</string>
+                                        </property>
+                                    </widget>
+                                </item>  
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="EditTab">
+                            <attribute name="title">
+                                <string>Edit</string>
+                            </attribute>
+                            <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0,0,0,0">
+                                <property name="spacing">
+                                    <number>5</number>
+                                </property>
+                                <property name="leftMargin">
+                                    <number>30</number>
+                                </property>
+                                <property name="topMargin">
+                                    <number>0</number>
+                                </property>
+                                <property name="rightMargin">
+                                    <number>30</number>
+                                </property>
+                                <property name="bottomMargin">
+                                    <number>0</number>
+                                </property>
+                                <item>
+                                    <widget class="QLabel" name="edit_user_label">
+                                        <property name="maximumSize">
+                                            <size>
+                                                <width>16777215</width>
+                                                <height>40</height>
+                                            </size>
+                                        </property>
+                                        <property name="text">
+                                            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Edit User&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                        </property>
+                                        <property name="alignment">
+                                            <set>Qt::AlignCenter</set>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLineEdit" name="user_id_for_edit">
+                                        <property name="placeholderText">
+                                            <string>ID</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QLineEdit" name="new_user_name">
+                                        <property name="placeholderText">
+                                            <string>New user name</string>
+                                        </property>
+                                    </widget>
+                                </item>
+                                <item>
+                                    <widget class="QPushButton" name="edit_button">
+                                        <property name="text">
+                                            <string>Edit User</string>
+                                        </property>
+                                    </widget>
+                                </item>
+
+                            </layout>
+                        </widget>
+                        <widget class="QWidget" name="AttendanceTab">
+                            <attribute name="title">
+                                <string>Attendance</string>
+                            </attribute>
+                            <widget class="QLabel" name="label_4">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>30</x>
+                                        <y>30</y>
+                                        <width>436</width>
+                                        <height>40</height>
+                                    </rect>
+                                </property>
+                                <property name="maximumSize">
+                                    <size>
+                                        <width>16777215</width>
+                                        <height>40</height>
+                                    </size>
+                                </property>
+                                <property name="text">
+                                    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Attendance Table&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+                                </property>
+                                <property name="alignment">
+                                    <set>Qt::AlignCenter</set>
+                                </property>
+                            </widget>
+                            <widget class="QTableWidget" name="attendTable">
+                                <property name="geometry">
+                                    <rect>
+                                        <x>0</x>
+                                        <y>120</y>
+                                        <width>500</width>
+                                        <height>351</height>
+                                    </rect>
+                                </property>
+
+                                <column>
+                                    <property name="text">
+                                        <string>ID</string>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>NAME</string>
+                                    </property>
+                                </column>
+                                <column>
+                                    <property name="text">
+                                        <string>TIME</string>
+                                    </property>
+                                </column>
+                            </widget>
+                        </widget>
+                    </widget>
+                </item>
+            </layout>
+        </widget>
+    </widget>
+    <resources/>
+    <connections/>
+</ui>
